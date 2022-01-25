@@ -1,6 +1,10 @@
 # 603-Game2-Group1
 
-current state: project build
+current state: 
 
-notes:
+project build
+
+
+# notes:
+
 never touch gitignore!
