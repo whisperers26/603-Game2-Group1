@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fab3b4e0-d681-f35d-9ecd-c33d5e329db2": {
+      "ProjectGuid": "fab3b4e0-d681-f35d-9ecd-c33d5e329db2",
+      "DisplayName": "MoreMountains.CorgiEngine",
+      "ColorIndex": 0
+    },
+    "923c3b47-a9a4-c8aa-1343-3df6a1f976c9": {
+      "ProjectGuid": "923c3b47-a9a4-c8aa-1343-3df6a1f976c9",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

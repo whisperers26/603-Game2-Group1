@@ -33,6 +33,8 @@ namespace MoreMountains.CorgiEngine
 		/// determines whether or not the projectile is facing right
 		[Tooltip("determines whether or not the projectile is facing right")]
 		public bool ProjectileIsFacingRight = true;
+		/// determines whether or not the projectile is affected by gravity
+		
 
 		[Header("Spawn")]
 		[MMInformation("Here you can define an initial delay (in seconds) during which this object won't take or cause damage. This delay starts when the object gets enabled. You can also define whether the projectiles should damage their owner (think rockets and the likes) or not",MoreMountains.Tools.MMInformationAttribute.InformationType.Info,false)]
@@ -49,6 +51,7 @@ namespace MoreMountains.CorgiEngine
         /// the layermask to use when performing the security check
 		[Tooltip("the layermask to use when performing the security check")]
         public LayerMask SpawnSecurityCheckLayerMask;
+
 
         /// Returns the associated damage on touch zone
         public DamageOnTouch TargetDamageOnTouch { get { return _damageOnTouch; } }
