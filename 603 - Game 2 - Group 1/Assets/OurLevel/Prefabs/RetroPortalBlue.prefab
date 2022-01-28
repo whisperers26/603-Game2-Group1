@@ -314,10 +314,10 @@ MonoBehaviour:
   ShouldUpdateState: 0
   OnlyOneActivationAtOnce: 1
   AlsoPerformChecksOnStay: 0
-  UnlimitedActivations: 1
-  MaxNumberOfActivations: 0
+  UnlimitedActivations: 0
+  MaxNumberOfActivations: 1
   DelayBetweenUses: 0
-  DisableAfterUse: 0
+  DisableAfterUse: 1
   InputType: 0
   InputButton: Interact
   InputKey: 32

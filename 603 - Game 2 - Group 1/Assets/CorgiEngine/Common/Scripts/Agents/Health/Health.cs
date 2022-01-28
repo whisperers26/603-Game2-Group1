@@ -159,7 +159,7 @@ namespace MoreMountains.CorgiEngine
         protected CharacterPersistence _characterPersistence = null;
         protected MaterialPropertyBlock _propertyBlock;
         protected bool _hasColorProperty = false;
-
+        
         /// <summary>
         /// On Start, we initialize our health
         /// </summary>
@@ -475,6 +475,8 @@ namespace MoreMountains.CorgiEngine
             }
             else
             {
+                
+
                 // finally we destroy the object
                 DestroyObject();
             }

@@ -48,6 +48,7 @@ namespace MoreMountains.CorgiEngine
         /// destination's offset is far enough from its center, you can set that to false
         [Tooltip("if this is true, the teleported object will be put on the destination's ignore list, to prevent immediate re-entry. If your destination's offset is far enough from its center, you can set that to false")]
         public bool AddToDestinationIgnoreList = true;
+        public bool DestroyAfterTeleport = false;
 
         [MMInspectorGroup("Rooms", true, 24)]
 
@@ -454,6 +455,13 @@ namespace MoreMountains.CorgiEngine
             }
 
             SequenceEndFeedback?.PlayFeedbacks();
+
+            if (DestroyAfterTeleport)
+            {
+                Destroy(this.Destination.gameObject);
+                Destroy(this.gameObject);
+                
+            }
         }
 
 	    /// <summary>

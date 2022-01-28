@@ -276,6 +276,7 @@ namespace MoreMountains.CorgiEngine
             _numberOfActivationsLeft--;
 
             DisableAfterActivation();
+            
         }
 
         /// <summary>
@@ -288,6 +289,7 @@ namespace MoreMountains.CorgiEngine
                 DisableZone();
             }
         }
+
 
         /// <summary>
         /// Triggers an error 

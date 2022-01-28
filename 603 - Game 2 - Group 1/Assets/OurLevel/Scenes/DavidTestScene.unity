@@ -543,11 +543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4327056396034110, guid: f91453c231f84424c82503a75cd03e08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0455093
+      value: -8.22
       objectReference: {fileID: 0}
     - target: {fileID: 4327056396034110, guid: f91453c231f84424c82503a75cd03e08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.061293
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4327056396034110, guid: f91453c231f84424c82503a75cd03e08, type: 3}
       propertyPath: m_LocalPosition.z
@@ -590,7 +590,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Destination
       value: 
-      objectReference: {fileID: 114219181254185443}
+      objectReference: {fileID: 0}
     - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
         type: 3}
       propertyPath: InitialDelay
@@ -603,6 +603,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
         type: 3}
+      propertyPath: DestroyAfterUse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
+      propertyPath: DisableAfterUse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
       propertyPath: FadeOutDuration
       value: 0
       objectReference: {fileID: 0}
@@ -610,6 +620,26 @@ PrefabInstance:
         type: 3}
       propertyPath: DelayBetweenFades
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
+      propertyPath: DestroyAfterTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
+      propertyPath: UnlimitedActivations
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219179259142264, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
+      propertyPath: MaxNumberOfActivations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384085189076828165, guid: f91453c231f84424c82503a75cd03e08,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f91453c231f84424c82503a75cd03e08, type: 3}
@@ -1337,18 +1367,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5446892369553105789}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &114219181254185443 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5333095926259954334, guid: 8dad83ed5aebc604eae1df8ba4cfd1c9,
-    type: 3}
-  m_PrefabInstance: {fileID: 5446892369553105789}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67c8b1f0cc0f1c46901ec3b398875b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &568867651944189673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1430,6 +1448,16 @@ PrefabInstance:
       propertyPath: Destination
       value: 
       objectReference: {fileID: 1126099608}
+    - target: {fileID: 5333095926259954334, guid: 8dad83ed5aebc604eae1df8ba4cfd1c9,
+        type: 3}
+      propertyPath: DestroyAfterUse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333095926259954334, guid: 8dad83ed5aebc604eae1df8ba4cfd1c9,
+        type: 3}
+      propertyPath: DestroyAfterTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5444903921770182910, guid: 8dad83ed5aebc604eae1df8ba4cfd1c9,
         type: 3}
       propertyPath: m_Name
