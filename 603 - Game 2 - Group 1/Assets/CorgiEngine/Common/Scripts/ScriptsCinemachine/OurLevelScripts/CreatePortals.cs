@@ -11,6 +11,8 @@ public class CreatePortals : MonoBehaviour
     {
         Teleporter port1 = Instantiate(PortalPrefab, p1, Quaternion.identity).GetComponent<Teleporter>();
         Teleporter port2 = Instantiate(PortalPrefab, p2, Quaternion.identity).GetComponent<Teleporter>();
+        port1.DestroyAfterTeleport = true;
+        port2.DestroyAfterTeleport = true;
         port1.Destination = port2;
 
     }
