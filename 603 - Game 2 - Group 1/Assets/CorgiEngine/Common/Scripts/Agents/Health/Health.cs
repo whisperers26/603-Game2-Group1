@@ -15,7 +15,7 @@ namespace MoreMountains.CorgiEngine
         /// the current health of the character
         [MMReadOnly] [Tooltip("the current health of the character")]
         public int CurrentHealth;
-
+        
         [Header("Health")]
         [MMInformation(
             "Add this component to an object and it'll have health, will be able to get damaged and potentially die.",
@@ -159,6 +159,7 @@ namespace MoreMountains.CorgiEngine
         protected CharacterPersistence _characterPersistence = null;
         protected MaterialPropertyBlock _propertyBlock;
         protected bool _hasColorProperty = false;
+        protected GameObject killer;
         
         /// <summary>
         /// On Start, we initialize our health
@@ -381,7 +382,7 @@ namespace MoreMountains.CorgiEngine
                         return;
                     }
                 }
-
+                killer = instigator;
                 Kill();
             }
         }
@@ -475,6 +476,12 @@ namespace MoreMountains.CorgiEngine
             }
             else
             {
+                
+                CreatePortals createPortals = this.gameObject.MMFGetComponentNoAlloc<CreatePortals>();
+                Vector3 p1 = killer.MMFGetComponentNoAlloc<Projectile>().GetOwner().transform.position;
+                Vector3 p2 = this.transform.localPosition;
+                if(createPortals!=null) createPortals.TransferToPosition(p1, p2);
+                    
                 
 
                 // finally we destroy the object

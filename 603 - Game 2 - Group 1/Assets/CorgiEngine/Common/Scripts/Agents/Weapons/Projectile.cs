@@ -226,7 +226,12 @@ namespace MoreMountains.CorgiEngine
                 }                
 			}
 		}
-		
+
+		public virtual GameObject GetOwner()
+        {
+			return _owner;
+        }
+
 		/// <summary>
 		/// Sets the damage caused by the projectile's DamageOnTouch to the specified value
 		/// </summary>
