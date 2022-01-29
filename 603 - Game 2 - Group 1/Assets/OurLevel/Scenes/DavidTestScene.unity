@@ -1194,6 +1194,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7347138636164905427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1851932029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: e21a05b91e88ead4eaa250bbc9063756,
+    type: 3}
+  m_PrefabInstance: {fileID: 2096314998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1851932030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851932029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c67aca00d12f44e9d05be19df22747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuSceneName: Title Screen
 --- !u!1 &1969480189
 GameObject:
   m_ObjectHideFlags: 0
