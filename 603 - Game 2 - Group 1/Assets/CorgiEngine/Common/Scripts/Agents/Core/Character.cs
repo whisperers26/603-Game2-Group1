@@ -247,7 +247,8 @@ namespace MoreMountains.CorgiEngine
             GetMainCamera();
 			// we store our components for further use 
 			CharacterState = new CharacterStates();
-			_spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+			//_spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+			_spriteRenderer = CharacterAnimator.gameObject.GetComponent<SpriteRenderer>();
 			_controller = this.gameObject.GetComponent<CorgiController>();
 			_characterPersistence = this.gameObject.GetComponent<CharacterPersistence>();
             CacheAbilitiesAtInit();
@@ -818,7 +819,12 @@ namespace MoreMountains.CorgiEngine
         {
             if (FlipModelOnDirectionChange)
             {
-                if (CharacterModel != null)
+				// if we're sprite renderer based, we revert the flipX attribute
+				if (_spriteRenderer != null)
+				{
+					_spriteRenderer.flipX = !_spriteRenderer.flipX;
+				}
+				/*if (CharacterModel != null)
                 {
                     CharacterModel.transform.localScale = Vector3.Scale(CharacterModel.transform.localScale, ModelFlipValue);
                 }
@@ -829,8 +835,8 @@ namespace MoreMountains.CorgiEngine
                     {
                         _spriteRenderer.flipX = !_spriteRenderer.flipX;
                     }
-                }
-            }
+                }*/
+			}
             if (RotateModelOnDirectionChange)
             {
                 if (CharacterModel != null)
