@@ -17,9 +17,11 @@ GameObject:
   - component: {fileID: 11458864}
   - component: {fileID: 11461966}
   - component: {fileID: 11433018}
-  - component: {fileID: 11479552}
   - component: {fileID: 114000012396418956}
   - component: {fileID: 114000012715910344}
+  - component: {fileID: -3900986943709594363}
+  - component: {fileID: -2997976717952344332}
+  - component: {fileID: -5470417777103160961}
   m_Layer: 13
   m_Name: Blob
   m_TagString: Untagged
@@ -290,7 +292,7 @@ MonoBehaviour:
   CollisionsOffOnDeath: 1
   GravityOffOnDeath: 0
   PointsWhenDestroyed: 10
-  RespawnAtInitialLocation: 0
+  RespawnAtInitialLocation: 1
   ApplyDeathForce: 1
   DeathForce: {x: 0, y: 20}
   ResetForcesOnDeath: 0
@@ -355,30 +357,6 @@ MonoBehaviour:
   HitNonDamageableFeedback: {fileID: 0}
   FreezeFramesOnHitDuration: 0
   Owner: {fileID: 0}
---- !u!114 &11479552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50fc24513c89140afa90465a45f5d6fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KnockbackForce: {x: 0, y: 20}
-  DamageCausedKnockbackType: 1
-  DamagePerStomp: 10
-  ResetNumberOfJumpsOnStomp: 0
-  InvincibilityDuration: 0.5
-  PlayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  NumberOfRays: 10
-  RaycastLength: 0.5
-  RaycastVerticalOffset: 0.01
-  StomperMustBeAlive: 1
 --- !u!114 &114000012396418956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +424,69 @@ MonoBehaviour:
   TouchTheGroundFeedback: {fileID: 0}
   MinimumAirTimeBeforeFeedback: 0.2
   StopWalkingWhenCollidingWithAWall: 0
+--- !u!114 &-3900986943709594363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0800398772fd5974e8f8cc32077d20db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PortalPrefab: {fileID: 5444903921770182910, guid: 8dad83ed5aebc604eae1df8ba4cfd1c9,
+    type: 3}
+--- !u!114 &-2997976717952344332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d66436e6d24d864b98c208398356163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  SubjectToGravityPoints: 1
+  SubjectToGravityZones: 1
+  ReverseHorizontalInputWhenUpsideDown: 0
+  ReverseVerticalInputWhenUpsideDown: 0
+  ReverseInputOnGravityPoints: 0
+  InitialGravityAngle: 0
+  RotationSpeed: 0
+  InactiveBufferDuration: 0.1
+  TransitionForcesMode: 0
+  ResetCharacterStateOnGravityChange: 1
+  DrawDebugGravityArrow: 1
+--- !u!114 &-5470417777103160961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1508296b0904b1ba069c225eb6482a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespawnOnPlayerRespawn: 1
+  RepositionToInitOnPlayerRespawn: 0
+  DisableOnKill: 1
+  AutoRespawnDuration: 0
+  AutoRespawnAmount: -1
+  AutoRespawnRemainingAmount: 3
+  IgnoreCheckpointsAlwaysRespawn: 1
+  AssociatedCheckpoints: []
+  RespawnFeedback: {fileID: 0}
 --- !u!1 &318872331409216111
 GameObject:
   m_ObjectHideFlags: 0
