@@ -6345,9 +6345,6 @@ GameObject:
   - component: {fileID: 114000013573007266}
   - component: {fileID: 11428732}
   - component: {fileID: 114000012072415528}
-  - component: {fileID: 114000012844973136}
-  - component: {fileID: 114000010494820656}
-  - component: {fileID: 114000014066787250}
   - component: {fileID: 114000012492799414}
   - component: {fileID: 114000013135785910}
   - component: {fileID: 114993081606869454}
@@ -6536,7 +6533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Top: 1
-  Bottom: 2
+  Bottom: 1
   Left: 1
   Right: 1
 --- !u!114 &11409634
@@ -6591,7 +6588,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WalkSpeed: 8
+  WalkSpeed: 6
   MovementSpeedMultiplier: 1
   AbilityMovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
@@ -6680,7 +6677,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   NumberOfJumps: 1
-  JumpHeight: 2
+  JumpHeight: 2.15
   JumpRestrictions: 2
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
@@ -6693,68 +6690,6 @@ MonoBehaviour:
   MovingPlatformsJumpCollisionOffDuration: 0.05
   AirJumpFeedbacks: {fileID: 0}
   NumberOfJumpsLeft: 0
---- !u!114 &114000012844973136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96ed8ea1ca8048f6a2b90871e211025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  LadderClimbingSpeed: 2
-  ForceRightFacing: 0
-  ForceAnchorToGroundOnExit: 0
---- !u!114 &114000010494820656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d7707613113491a9d85f1caab5837b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  WallClingingSlowFactor: 0.6
-  RaycastVerticalOffset: 0
-  WallClingingTolerance: 0.3
-  InputIndependent: 0
---- !u!114 &114000014066787250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  WallJumpForce: {x: 10, y: 4}
-  ShouldReduceNumberOfJumpsLeft: 1
-  ForceMode: 0
-  ForceFlipTowardsDirection: 0
 --- !u!114 &114000012492799414
 MonoBehaviour:
   m_ObjectHideFlags: 0
