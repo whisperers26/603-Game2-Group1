@@ -3734,7 +3734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 145898, guid: d2b319a1a55a9f84693dde2785a50e82, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 471364, guid: d2b319a1a55a9f84693dde2785a50e82, type: 3}
       propertyPath: m_RootOrder
@@ -3786,6 +3786,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471364, guid: d2b319a1a55a9f84693dde2785a50e82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21292480, guid: d2b319a1a55a9f84693dde2785a50e82, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -56940,18 +56944,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 278072803}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &639709804 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 11400000, guid: 7a343ffc127af4b41b1e509d55d21956,
-    type: 3}
-  m_PrefabInstance: {fileID: 1877389163}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 923a01d66c4618446abb082250646478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &648798509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61376,7 +61368,7 @@ MonoBehaviour:
   - {fileID: 11409634, guid: fa8d36f9664091d438efb4576447bfbb, type: 3}
   AutoAttributePlayerIDs: 1
   SceneCharacters: []
-  DebugSpawn: {fileID: 639709804}
+  DebugSpawn: {fileID: 0}
   CheckpointAttributionAxis: 3
   CheckpointAttributionDirection: 0
   CurrentCheckPoint: {fileID: 0}
