@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OurLevel/Scenes/DavidTestScene.unity
     guid: 20353a67b3333b540ba8afe19ccfdae3
+  - enabled: 1
+    path: Assets/OurLevel/Scenes/GreyboxScene.unity
+    guid: d72ecda16f1465f4095ca25388909ec4
   m_configObjects: {}

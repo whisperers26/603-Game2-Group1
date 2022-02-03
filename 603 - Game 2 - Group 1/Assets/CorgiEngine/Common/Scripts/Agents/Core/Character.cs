@@ -77,6 +77,8 @@ namespace MoreMountains.CorgiEngine
 		/// the object to use as the camera target for this character
 		[Tooltip("the object to use as the camera target for this character")]
 		public GameObject CameraTarget;
+
+		public GameObject finishPanel;
 		/// the speed at which the Camera Target moves
 		[Tooltip("the speed at which the Camera Target moves")]
 		public float CameraTargetSpeed = 5f;
@@ -996,5 +998,14 @@ namespace MoreMountains.CorgiEngine
 				CharacterHealth.OnDeath -= OnDeath;
             }			
 		}
+
+		public void OnTriggerEnter2D(Collider2D other)
+        {
+			if(other.gameObject.tag == "final")
+            {
+				finishPanel.SetActive(true);
+				Time.timeScale = 0f;
+            }
+        }
 	}
 }

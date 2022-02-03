@@ -19,7 +19,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void Game()
     {
-        SceneManager.LoadScene("DavidTestScene");
+        SceneManager.LoadScene("GreyboxScene");
     }
 
     public void Quit()
